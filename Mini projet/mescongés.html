@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes congés</title>
+  <link rel="stylesheet" href="mesconges.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="navfooter.css">
+  
+</head>
+<body>
+<div class="sidebar">
+      <h2>Dashboard RH</h2>
+      <nav>
+        <a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+        <a href="mescongés.html"><i class="fa-solid fa-calendar-days"></i> Mes congés</a>
+        <a href="demandes.html"><i class="fa-solid fa-file-circle-check"></i> Demande de congé</a>
+        <a href="administration.html"><i class="fa-solid fa-user-gear"></i> Administration</a>
+      </nav>
+      <a class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</a>
+    </div>
+
+  <main class="container">
+    <h2 class="conges">Mes congés</h2>
+    <p>Consultez et gérez vos demandes de congés</p>
+
+   
+    <div class="resume">
+      <div class="resume-card">
+        <i class="fa-solid fa-suitcase-rolling"></i>
+        <div>
+          <strong>23</strong><br>
+          Solde restant
+        </div>
+      </div>
+      <div class="resume-card">
+        <i class="fa-solid fa-circle-check"></i>
+        <div>
+          <strong>12</strong><br>
+          Approuvés
+        </div>
+      </div>
+      <div class="resume-card">
+        <i class="fa-solid fa-clock"></i>
+        <div>
+          <strong>2</strong><br>
+          En attente
+        </div>
+      </div>
+      <div class="resume-card">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <div>
+          <strong>1</strong><br>
+          Refusés
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="leave-list">
+
+      <div class="leave-card">
+        <div class="leave-header">
+          <h3>Congés d’été</h3>
+          <span class="badge pending">En attente</span>
+        </div>
+        <p>Du 15 juillet 2025 au 29 juillet 2025</p>
+        <p><strong>Durée :</strong> 15 jours | <strong>Type :</strong> Congés payés</p>
+        <div class="actions">
+          <button class="btn edit"><i class="fa-solid fa-pen"></i> Modifier</button>
+          <button class="btn cancel"><i class="fa-solid fa-ban"></i> Annuler</button>
+        </div>
+      </div>
+
+      <div class="leave-card">
+        <div class="leave-header">
+          <h3>Pont de mai</h3>
+          <span class="badge approved">Approuvé</span>
+        </div>
+        <p>Du 2 mai 2025 au 2 mai 2025</p>
+        <p><strong>Durée :</strong> 1 jour | <strong>Type :</strong> Congés payés</p>
+        <p class="validated">Approuvé par Jean Martin</p>
+      </div>
+
+      <div class="leave-card">
+        <div class="leave-header">
+          <h3>Congés de Pâques</h3>
+          <span class="badge approved">Approuvé</span>
+        </div>
+        <p>Du 14 avril 2025 au 18 avril 2025</p>
+        <p><strong>Durée :</strong> 5 jours | <strong>Type :</strong> Congés payés</p>
+        <p class="validated">Approuvé par Jean Martin</p>
+      </div>
+
+      <div class="leave-card">
+        <div class="leave-header">
+          <h3>Formation urgente</h3>
+          <span class="badge pending">En attente</span>
+        </div>
+        <p>Du 10 mars 2025 au 12 mars 2025</p>
+        <p><strong>Durée :</strong> 3 jours | <strong>Type :</strong> Formation</p>
+        <div class="actions">
+          <button class="btn edit"><i class="fa-solid fa-pen"></i> Modifier</button>
+          <button class="btn cancel"><i class="fa-solid fa-ban"></i> Annuler</button>
+        </div>
+      </div>
+
+      <div class="leave-card">
+        <div class="leave-header">
+          <h3>Congés de Noël</h3>
+          <span class="badge refused">Refusé</span>
+        </div>
+        <p>Du 23 décembre 2024 au 2 janvier 2025</p>
+        <p><strong>Durée :</strong> 11 jours | <strong>Type :</strong> Congés payés</p>
+        <p class="refused">Refusé par Jean Martin</p>
+        <p><em>Motif du refus : Période de forte activité, demande trop tardive</em></p>
+      </div>
+    </div>
+</main>
+   
+    <footer>
+      <div>
+        <h4>Ressources Humaines</h4>
+        <p>rh@entreprise.com<br>01 23 45 67 89</p>
+      </div>
+      <div>
+        <h4>Adresse</h4>
+        <p>123 Rue de l’Entreprise<br>75001 Paris, France</p>
+      </div>
+      <div>
+        <h4>Liens utiles</h4>
+        <p>Règlement intérieur<br>Convention collective<br>Support IT</p>
+      </div>
+      <div>
+        <h4>Urgence</h4>
+        <p>urgence@entreprise.com<br>06 12 34 56 78</p>
+      </div>
+    </footer>
+  
+</body>
+</html>

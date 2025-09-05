@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard RH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+ <link rel="stylesheet" href="administration.css">
+ <link rel="stylesheet" href="navfooter.css">
+</head>
+<body>
+<div class="sidebar">
+      <h2>Dashboard RH</h2>
+      <nav>
+        <a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+        <a href="mescongés.html"><i class="fa-solid fa-calendar-days"></i> Mes congés</a>
+        <a href="demandes.html"><i class="fa-solid fa-file-circle-check"></i> Demande de congé</a>
+        <a href="administration.html"><i class="fa-solid fa-user-gear"></i> Administration</a>
+      </nav>
+      <a class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</a>
+    </div>
+  <div class="container py-4">
+    <div class="header-section text-center">
+      <h2>Gestion des congés</h2>
+      <p>Gérez toutes les demandes de congés des employés</p>
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <button class="btn btn-custom"><i class="fa-solid fa-filter"></i> Filtrer</button>
+        <button class="btn btn-custom"><i class="fa-solid fa-file-export"></i> Exporter</button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <p>En attente<br><strong>12</strong></p>
+        <i class="fa-regular fa-clock"></i>
+      </div>
+      <div class="stat-card">
+        <p>Approuvées<br><strong>45</strong></p>
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="stat-card">
+        <p>Refusées<br><strong>3</strong></p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="stat-card">
+        <p>Total ce mois<br><strong>60</strong></p>
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+    </div>
+  </div>
+<div class="container mt-5">
+  <h3 class="mb-4">Demandes de congés</h3>
+
+  <div class="row g-4">
+    
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm rounded-4">
+        <h5>Marie Dubois <small class="text-muted">— Développeuse</small></h5>
+        <p><strong>Type :</strong> RTT</p>
+        <p><strong>Dates :</strong> 15 Jan 2025 → 20 Jan 2025</p>
+        <p><strong>Durée :</strong> 5 jours</p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-custom"><i class="fa-solid fa-check"></i> Approuver</button>
+          <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Refuser</button>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm rounded-4">
+        <h5>Pierre Martin <small class="text-muted">— Designer</small></h5>
+        <p><strong>Type :</strong> Congé payé</p>
+        <p><strong>Dates :</strong> 20 Jan 2025 → 22 Jan 2025</p>
+        <p><strong>Durée :</strong> 2 jours</p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-custom"><i class="fa-solid fa-check"></i> Approuver</button>
+          <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Refuser</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm rounded-4">
+        <h5>Sophie Laurent <small class="text-muted">— Chef de projet</small></h5>
+        <p><strong>Type :</strong> Congé sans solde</p>
+        <p><strong>Dates :</strong> 10 Jan 2025 → 12 Jan 2025</p>
+        <p><strong>Durée :</strong> 2 jours</p>
+        <span class="badge bg-success p-2">Approuvée</span>
+      </div>
+    </div>
+
+    
+    <div class="col-md-6">
+      <div class="card p-4 shadow-sm rounded-4">
+        <h5>Thomas Petit <small class="text-muted">— RH</small></h5>
+        <p><strong>Type :</strong> RTT</p>
+        <p><strong>Dates :</strong> 15 Jan 2025 → 17 Jan 2025</p>
+        <p><strong>Durée :</strong> 2 jours</p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-custom"><i class="fa-solid fa-check"></i> Approuver</button>
+          <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Refuser</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <footer>
+      <div>
+        <h4>Ressources Humaines</h4>
+        <p>rh@entreprise.com<br>01 23 45 67 89</p>
+      </div>
+      <div>
+        <h4>Adresse</h4>
+        <p>123 Rue de l’Entreprise<br>75001 Paris, France</p>
+      </div>
+      <div>
+        <h4>Liens utiles</h4>
+        <p>Règlement intérieur<br>Convention collective<br>Support IT</p>
+      </div>
+      <div>
+        <h4>Urgence</h4>
+        <p>urgence@entreprise.com<br>06 12 34 56 78</p>
+      </div>
+    </footer>
+</body>
+</html>

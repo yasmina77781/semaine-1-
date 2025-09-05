@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande de congé</title>
+  <link rel="stylesheet" href="demandes.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href= "navfooter.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Dashboard RH</h2>
+      <nav>
+       <a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+        <a href="mescongés.html"><i class="fa-solid fa-calendar-days"></i> Mes congés</a>
+        <a href="demandes.html"><i class="fa-solid fa-file-circle-check"></i> Demande de congé</a>
+        <a href="administration.html"><i class="fa-solid fa-user-gear"></i> Administration</a>
+      </nav>
+      <a class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</a>
+    </aside>
+
+    
+    <main class="content">
+      <h2>Nouvelle demande de congé</h2>
+      <p>Remplissez le formulaire ci-dessous pour soumettre votre demande de congé.</p>
+
+      <form class="card">
+        <div class="form-group">
+          <label for="date-debut">Date de début</label>
+          <input type="date" id="date-debut" name="date-debut" required>
+        </div>
+
+        <div class="form-group">
+          <label for="date-fin">Date de fin</label>
+          <input type="date" id="date-fin" name="date-fin" required>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Type de congé</label>
+          <select id="type" name="type" required>
+            <option value="">Sélectionnez un type de congé</option>
+            <option value="cp">Congés payés</option>
+            <option value="parental">Congé parental</option>
+            <option value="sans-solde">Congé sans solde</option>
+            <option value="maladie">Congé maladie</option>
+            <option value="administratif">Congé administratif</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="justification">Justification</label>
+          <textarea id="justification" name="justification" rows="4" maxlength="500" placeholder="Décrivez la raison de votre demande de congé..."></textarea>
+          <small>Maximum 500 caractères</small>
+        </div>
+
+        <div class="notification">
+          <p><strong>Information importante :</strong><br>
+            Votre demande sera transmise à votre manager pour validation.<br>
+            Vous recevrez une notification par email une fois la décision prise.
+          </p>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Soumettre la demande</button>
+          <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+        </div>
+      </form>
+
+      <section class="historique-demandes">
+        <h3>Mes dernières demandes</h3>
+        <ul>
+          <li><strong>Congés payés</strong> du 08/03/2025 au 19/03/2025 — <em class="statut attente">En attente</em></li>
+          <li><strong>Congé personnel</strong> du 08/02/2025 au 08/02/2025 — <em class="statut approuve">Approuvée</em></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+ 
+  <footer>
+    <div>
+      <h4>Ressources Humaines</h4>
+      <p>rh@entreprise.com<br>01 23 45 67 89</p>
+    </div>
+    <div>
+      <h4>Adresse</h4>
+      <p>123 Rue de l’Entreprise<br>75001 Paris, France</p>
+    </div>
+    <div>
+      <h4>Liens utiles</h4>
+      <p>Règlement intérieur<br>Convention collective<br>Support IT</p>
+    </div>
+    <div>
+      <h4>Urgence</h4>
+      <p>urgence@entreprise.com<br>06 12 34 56 78</p>
+    </div>
+  </footer>
+</body>
+</html>
