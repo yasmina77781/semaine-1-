@@ -1,9 +1,9 @@
-/* ================= NAVBAR (header / sidebar en haut) ================= */
+
 .sidebar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #6d4c41, #8d6e63); /* même style partout */
+  background: linear-gradient(90deg, #6d4c41, #8d6e63); 
   padding: 15px 40px;
   position: sticky;
   top: 0;
@@ -61,7 +61,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 30px 40px;
-  background: linear-gradient(90deg, #6d4c41, #8d6e63); /* même que navbar */
+  background: linear-gradient(90deg, #6d4c41, #8d6e63); 
   color: #f8f5f0;
   margin-top: 40px;
   text-align: center;
