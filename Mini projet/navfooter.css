@@ -80,3 +80,45 @@ footer p {
   color: #f5e9e0;
   line-height: 1.5;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .sidebar nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .sidebar a,
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sidebar h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .sidebar nav {
+    gap: 8px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+}
